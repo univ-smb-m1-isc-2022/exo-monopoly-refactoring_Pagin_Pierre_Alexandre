@@ -28,8 +28,8 @@ public class CaseConstructible extends Case {
         return quartier.getCouleur() ;
     }
 
-    public int nombreProprieteDeLaCouleur(String couleur){
-        return quartier.nombreProprieteDeLaCouleur(couleur);
+    public int nombreProprieteDeLaCouleur(){
+        return quartier.getSizeQuartier();
     }
 
     public Joueur getProprietaire() {

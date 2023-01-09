@@ -215,7 +215,7 @@ public class Joueur implements Comparable {
             else {  // traitement si pas une gare
                 for (Joueur aJ : j) {
                     if (aJ.casespossedes.contains(c)) {  // cherche le joueur qui est proprietaire de la case
-                        if (aJ.getNombrePropriete(c.getCouleur())==c.nombreProprieteDeLaCouleur(c.getCouleur())){  // si le propriatire a toutes les propriétés
+                        if (aJ.getNombrePropriete(c.getCouleur())==c.nombreProprieteDeLaCouleur()){  // si le propriatire a toutes les propriétés
                             argent = argent - c.getLoyer()*2;
                             if (argent>=0){ // si  peut payer le loyer
                                 aJ.argent += c.getLoyer()*2;
