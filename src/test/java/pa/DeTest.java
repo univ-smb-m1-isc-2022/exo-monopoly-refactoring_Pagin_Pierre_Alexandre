@@ -3,7 +3,6 @@ package pa;
 import org.junit.jupiter.api.Test;
 import pa.De;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class DeTest {
