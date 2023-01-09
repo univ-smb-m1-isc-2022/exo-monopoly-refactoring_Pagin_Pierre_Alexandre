@@ -1,3 +1,4 @@
+package pa;
 
 public class CaseConstructible extends Case {
 

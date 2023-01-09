@@ -1,3 +1,5 @@
+package pa;
+
 public abstract class Case {
 
     private final String name;

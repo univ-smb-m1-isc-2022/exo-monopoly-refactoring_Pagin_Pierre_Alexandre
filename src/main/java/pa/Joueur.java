@@ -1,3 +1,5 @@
+package pa;
+
 import java.util.ArrayList;
 
 public class Joueur implements Comparable {

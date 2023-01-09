@@ -1,3 +1,5 @@
+package pa;
+
 import java.util.ArrayList;
 
 public class Plateau {
@@ -50,7 +52,7 @@ public class Plateau {
     bellevile = new CaseConstructible("Boulevard de Bellevile", 20, 2,"v");
     lecourbe = new CaseConstructible("Rue Lecourbe", 40, 4, "v");
     vaugirard = new CaseConstructible("Rue Vaugirard", 60, 6,"b");
-    courcelles = new CaseConstructible("Rue De Courcelles", 60, 6,"b");
+    courcelles = new CaseConstructible("Rue pa.De Courcelles", 60, 6,"b");
     republique = new CaseConstructible("Avenue de la Republique", 80, 8,"b");
     neuilly = new CaseConstructible("Avenue de Neuilly", 100, 10,"p");
     villette = new CaseConstructible("Boulevard de la Villette", 100, 10,"p");
@@ -73,7 +75,7 @@ public class Plateau {
     luxe = new CaseSpeciale("Taxe de Luxe");
     prison = new CaseSpeciale("Prison");
     allerenprison = new CaseSpeciale("Aller en Prison");
-    garedelyon = new CaseConstructible("Gare De Lyon",120,25,"gare");
+    garedelyon = new CaseConstructible("Gare pa.De Lyon",120,25,"gare");
     garemontparnasse = new CaseConstructible("Gare Mont-Parnasse",120,25,"gare");
     garedunord = new CaseConstructible("Gare Du Nord",120,25,"gare");
     garesaintlazard = new CaseConstructible("Gare Saint-Lazar",120,25,"gare");

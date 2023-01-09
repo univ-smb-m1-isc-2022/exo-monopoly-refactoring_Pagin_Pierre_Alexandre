@@ -1,3 +1,5 @@
+package pa;
+
 public class De {
 
     private int valeurFace;

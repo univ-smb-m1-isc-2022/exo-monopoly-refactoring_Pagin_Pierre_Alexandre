@@ -1,3 +1,5 @@
+package pa;
+
 public class CaseSpeciale extends Case {
 
 

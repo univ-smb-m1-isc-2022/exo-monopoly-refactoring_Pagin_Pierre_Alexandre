@@ -1,3 +1,5 @@
+package pa;
+
 public class Combinaison {
 
     public Combinaison() {
