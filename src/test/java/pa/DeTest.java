@@ -17,4 +17,9 @@ public class DeTest {
         }
     }
 
+    @Test
+    public void DeNonNul(){
+        De de = new De();
+        assertThat(de.getValeur()).isNotNull();
+    }
 }
