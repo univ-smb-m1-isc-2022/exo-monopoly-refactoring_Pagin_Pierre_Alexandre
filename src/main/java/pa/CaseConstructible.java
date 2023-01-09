@@ -4,7 +4,6 @@ public class CaseConstructible extends Case {
     private final int coutAchat;
     private final int loyer;
     private final Quartier quartier;
-
     private Joueur proprietaire;
 
     public CaseConstructible(String name, int coutAchat, int loyer, Quartier q) {
