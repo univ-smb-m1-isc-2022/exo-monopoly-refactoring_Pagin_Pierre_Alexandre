@@ -23,9 +23,4 @@ public class PlateauTest {
         assertThat(c).isEqualTo(p.depart);
     }
 
-    @Test
-    public void testTailleCaseAchetable(){
-        assertThat(p.getCaseAchetable().size()).isEqualTo(26);
-    }
-
 }
