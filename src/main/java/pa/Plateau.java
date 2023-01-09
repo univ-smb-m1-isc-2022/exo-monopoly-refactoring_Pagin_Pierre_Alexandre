@@ -73,7 +73,7 @@ public class Plateau {
 
     private void genererListeCaseSansProprietaire(ArrayList<Case> plateau){
         for (Case c: plateau) {
-            if (c.getClass() == CaseConstructible.class){
+            if (c instanceof CaseConstructible){
                 caseSansProprietaire.add((CaseConstructible) c);
             }
         }
