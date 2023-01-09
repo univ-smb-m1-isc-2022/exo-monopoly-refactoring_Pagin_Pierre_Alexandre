@@ -22,7 +22,6 @@ public class Plateau {
         ArrayList<Case> plateau = new ArrayList<>();
         creerLesCases(plateau);
         creerLesCasesSuivantes(plateau);
-        genererListeCaseSansProprietaire(plateau);
     }
 
     private void creerLesCases(ArrayList<Case> plateau ){
@@ -79,14 +78,6 @@ public class Plateau {
         }
         plateau.get(plateau.size()-1).setSuivante(plateau.get(0));
 }
-
-    private void genererListeCaseSansProprietaire(ArrayList<Case> plateau){
-        for (Case c: plateau) {
-            if (c instanceof CaseConstructible){
-                caseSansProprietaire.add((CaseConstructible) c);
-            }
-        }
-    }
 
     public ArrayList<CaseConstructible> getCaseAchetable(){
           return caseSansProprietaire;

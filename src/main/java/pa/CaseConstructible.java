@@ -5,11 +5,14 @@ public class CaseConstructible extends Case {
     private final int loyer;
     private final Quartier quartier;
 
+    private Joueur proprietaire;
+
     public CaseConstructible(String name, int coutAchat, int loyer, Quartier q) {
         super(name);
         this.coutAchat = coutAchat;
         this.loyer = loyer;
         this.quartier = q;
+        this.proprietaire = null;
         q.addCaseQuartier(this);
     }
 
@@ -29,5 +32,15 @@ public class CaseConstructible extends Case {
         return quartier.nombreProprieteDeLaCouleur(couleur);
     }
 
+    public Joueur getProprietaire() {
+        return proprietaire;
+    }
 
+    public boolean hasProprietaire(){
+        return proprietaire != null;
+    }
+
+    public void setProprietaire(Joueur proprietaire) {
+        this.proprietaire = proprietaire;
+    }
 }
