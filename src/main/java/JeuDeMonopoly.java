@@ -1,5 +1,3 @@
-package net.guillaume.teaching.refactoring.monopoly;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -81,7 +79,7 @@ public class JeuDeMonopoly {
 
     private void jouerLeTotalDe(Joueur unjoueur, int total) {
         unjoueur.joue(total, plateau.depart, plateau.impot, plateau.luxe, plateau.allerenprison, plateau.prison);   // tester si cas construtible
-        if(unjoueur.getPosition() instanceof  CaseConstructible) {
+        if(unjoueur.getPosition() instanceof CaseConstructible) {
         unjoueur.acheterCase((CaseConstructible) unjoueur.getPosition(),caseLibreAAchat);
         unjoueur.payerLoyer((CaseConstructible) unjoueur.getPosition(),caseLibreAAchat, joueurs);
         }
